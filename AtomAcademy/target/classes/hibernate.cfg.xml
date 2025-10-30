@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+<session-factory>
+<property name="hibernate.connection.driver_class">org.h2.Driver</property>
+<property name="hibernate.connection.url">jdbc:h2:~/AtomacAdemy/atomacademy;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=TRUE;AUTO_SERVER=TRUE</property>
+<property name="hibernate.connection.username">sa</property>
+<property name="hibernate.connection.password"></property>
+<property name="hibernate.show_sql">true</property>
+<property name="hibernate.format_sql">true</property>
+<property name="hibernate.hbm2ddl.auto">update</property>
+<property name="hibernate.globally_quoted_identifiers">false</property> 
+<property name="hibernate.globally_quoted_identifiers_skip_column_definitions">true</property>
+<mapping class="com.garijotatiana.atomacademy.model.Alumno"></mapping>
+<mapping class="com.garijotatiana.atomacademy.model.Profesor"></mapping>
+<mapping class="com.garijotatiana.atomacademy.model.Pago"></mapping>
+<mapping class="com.garijotatiana.atomacademy.model.Curso"></mapping>
+<mapping class="com.garijotatiana.atomacademy.model.Nota"></mapping>
+</session-factory>
+</hibernate-configuration>
+
+
